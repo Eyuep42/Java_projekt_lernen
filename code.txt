@@ -1,0 +1,22 @@
+import java.util.scanner
+
+        while(auswahl) {
+            Scanner myObj = new Scanner(System.in);
+            System.out.println("Lagerbestand zur Prüfung eingeben: ");
+            int lagerbestand = myObj.nextInt();
+            int bestand = lagerbestand;
+            if (bestand > 5) {
+                System.out.println("Bestandt von " + bestand + " außreichend");
+            } else {
+                System.out.println("Bestandt von " + bestand + " nicht außreichend");
+            }
+
+            System.out.println("1 für erneut 0 für Prozess beenden");
+            int wahl = myObj.nextInt();
+            if (wahl == 0) {
+                auswahl = false;
+                System.out.println("Prozess beendet");
+            }
+        }
+
+    }
